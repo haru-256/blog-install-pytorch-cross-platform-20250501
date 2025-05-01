@@ -1,4 +1,4 @@
-# uvでcross-platformなCPU/GPU用PyTorchを自動インストール
+# uvでOSやCPU/GPUに依存しないPyTorch用lockファイルの作成と自動インストール
 
 以下の記事のサンプルコードです。
 
