@@ -20,8 +20,8 @@ conflicts = [[{ extra = "cpu" }, { extra = "gpu" }]]
 
 [tool.uv.sources]
 torch = [
-  { index = "pytorch-cpu-mac", extra = "cpu", marker = "platform_system == 'macOS'" },
-  { index = "pytorch-cpu", extra = "cpu", marker = "platform_system != 'macOS'" },
+  { index = "pytorch-cpu-mac", extra = "cpu", marker = "platform_system == 'Darwin'" },
+  { index = "pytorch-cpu", extra = "cpu", marker = "platform_system != 'Darwin'" },
   { index = "pytorch-gpu", extra = "gpu" },
 ]
 
