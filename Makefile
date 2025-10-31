@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-HAS_CUDA := $(shell command -v nvcc 2> /dev/null && echo 1 || echo 0)
+HAS_CUDA := $(shell command -v nvcc 2>&1 /dev/null && echo 1 || echo 0)
 
 .PHONY: lint
 lint: ## Run Linter
